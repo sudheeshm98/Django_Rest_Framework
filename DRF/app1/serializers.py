@@ -6,3 +6,8 @@ class RegisterSerializer(serializers.ModelSerializer):
         model = Register
         fields = '__all__'
 
+class LoginSerializer(serializers.Serializer):
+        email = serializers.CharField()
+        password = serializers.CharField()
+
+
